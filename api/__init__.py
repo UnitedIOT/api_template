@@ -20,6 +20,7 @@ def create_app():
     db.init_app(app)
 
     @app.route('/hello')
+    @app.route('/')
     def index():
         """
         :return:
